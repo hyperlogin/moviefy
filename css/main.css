@@ -1,0 +1,57 @@
+body
+{
+	background: ##00aa77;
+	background-image: url("../images/zenbg-1.png") , url("../images/zenbg-2.png");
+	background-repeat: repeat-x, repeat;	
+}
+
+.ribbon-wrapper-red {
+  width: 80px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-red {
+  font: bold 12px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #FD0004;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF5456), to(#FF1D21)); 
+  background-image: -webkit-linear-gradient(top, #FF5456, #FF1D21); 
+  background-image:    -moz-linear-gradient(top, #FF5456, #FF1D21); 
+  background-image:     -ms-linear-gradient(top, #FF5456, #FF1D21); 
+  background-image:      -o-linear-gradient(top, #FF5456, #FF1D21); 
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-red:before, .ribbon-red:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-red:before {
+  left: 0;
+}
+.ribbon-red:after {
+  right: 0;
+}
